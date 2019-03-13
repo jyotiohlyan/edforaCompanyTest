@@ -1,0 +1,175 @@
+*{
+  font-size: 16px;
+}
+
+
+//header start
+
+header{
+  .navbar{
+    .navbar-nav{
+      .nav-item{
+        .nav-link{
+          color: $block-navbarfont-color;
+          font-weight: bold;
+          font-size: 18px;
+          padding: 1.5rem 1.5rem;
+        }
+        .last-child{
+          padding-top: 0px;
+        }
+        span{
+          padding-left: 1.5rem;
+          font-size: 12px;
+          font-weight: bold;
+        }
+        
+      }
+    }
+  }
+}
+
+//header-slide
+
+.header-slide{
+  padding: 12rem 0px 8rem;
+  .hearo-small-heading{
+    padding: 2rem 0px 1rem;
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+}
+
+//services
+.services{
+  padding: 0rem 0px 8rem;
+  .col-lg-12{
+    text-align: center;
+    .small-heading{
+      color: $color2;
+    }
+    .heading-text{
+      // font-weight: bold;
+      color: #9d878a;
+    }
+  }
+  .services-box{
+    padding: 3rem 15px;
+    .inner-box{
+      padding: 1rem 15px;
+      text-align: center;
+      -webkit-box-shadow: 6px 3px 41px 0px rgba(205,205,205,1);
+      -moz-box-shadow: 6px 3px 41px 0px rgba(205,205,205,1);
+      box-shadow: 6px 3px 41px 0px rgba(205,205,205,1);
+      p{
+        color: #9d878a;
+        font-size: 14px
+      }
+      h3{
+        font-size: 25px;
+        padding: 1rem;
+      }
+    }
+  }
+
+}
+//payment
+.payment{
+  background: $button-color;
+  padding: 3rem 0px;
+  margin-bottom: 2rem;
+  color: $white-color;
+  .signup-button{
+    text-align: right;
+    @media(max-width:680px){
+      text-align: center;
+    }
+    .main-button{
+      background: $white-color;
+      color: $color2;
+      font-weight: bold;
+      padding: 1rem 2rem;
+    }
+  }
+}
+//footer
+footer{
+  text-align: center;
+  padding-bottom: 8rem;
+}
+
+//model-box css
+@media(min-width: 576px){
+  .modal-dialog{
+    max-width: 630px;
+  }
+}
+.modal-header{
+  h5{
+    color: $button-color;
+  }
+}
+.modal-content{
+  z-index: -1;
+  form{
+    :focus{outline: none;}
+    .select-code{
+      label{
+        font-size: 12px;
+      }
+    }
+    .input-effect{
+      margin: 1rem 0px;
+      input[type="text"],select{
+        color: #000;
+        width: 100%;
+        box-sizing: border-box; 
+        letter-spacing: 1px;
+      }
+    }
+    .rest-button{
+      text-align: left;
+      button{
+        color: $color2;
+        background: transparent;
+        margin: 3rem 0px;
+        border: 0px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    }
+    .Continue-button{
+      text-align: right;
+      .main-button{
+        padding: .5rem 2rem;
+        margin: 3rem 0px;
+        border-radius: 25px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+// Effect Styles Start Here
+.input-style{
+  border: 0; 
+  padding: 4px 0; 
+  border-bottom: 1px solid #ccc; 
+  background-color: transparent;
+  width: 100%;
+}
+.input-style ~ .focus-border{position: absolute; bottom: 0; left: 15px; width: 0; height: 2px; background-color: $button-color; transition: 0.4s;}
+.input-style:focus ~ .focus-border, .has-content.input-style ~ .focus-border{width: 91%; transition: 0.4s;}
+.input-style ~ label{
+  position: absolute; 
+  left: 18px; 
+  width: 100%; 
+  top: 9px; 
+  color: #aaa; 
+  transition: 0.3s; 
+  z-index: -1; 
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label{
+  top: -16px; font-size: 12px; color: #cdcdcd; transition: 0.3s;
+}

@@ -1,0 +1,20 @@
+//comman css 
+
+.main-heading{
+    font-size: 40px;
+}
+
+.main-button{
+    background: $button-color;
+    color: $white-color;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 4px;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+.sub-heading{
+    font-size: 18px;
+    color: #9d878a;
+    text-transform: uppercase;
+}
